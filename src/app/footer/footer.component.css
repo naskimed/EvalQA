@@ -1,0 +1,5 @@
+#curved-bottom {
+    /* Curved corners */
+    border-top-left-radius: 60% 40%;
+    border-top-right-radius: 60% 40%;
+}

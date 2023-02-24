@@ -1,0 +1,50 @@
+<header>
+    <!--Section: Design Block-->
+<section>
+    <!-- Intro -->
+    <div id="intro" class="bg-image vh-100" >
+      <div class="mask" style="background-color: rgba(214, 214, 214, 0.15);"></div>
+    </div>
+    <!-- Intro -->
+  <!--Section: Design Block-->
+<div class="container">
+    <div class="row top-buffer">
+        <div class="col">
+            <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="20" placeholder="Enter your text" style="resize: none;"></textarea>
+                <button type="button" id="btn-primary1" class="btn btn-primary btn-lg">START</button>
+            </div>
+        </div>
+        <div class="col">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-15">
+                            <div class="frame-box">
+                                <div *ngFor="let item of chatConversation">
+                                    <p class="message" [ngClass]="item.cssClass">
+                                        {{item.person}} :  {{getText(item.response)}}                                                                                                            
+                                    </p>
+                                    
+                                </div>
+                                <div><img src="../../assets/image/loading.gif" *ngIf="showSpinner" width="300px" style="margin-left: 320px; margin-bottom: 200px;" ></div>
+                                
+                            </div>
+                            <br>
+                                <textarea row="3" cols="10" class="form-control" placeholder="Enter your answer" [(ngModel)]="promptText" style="resize: none;" ></textarea>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
+                                        <button id="btn-primary0" class="btn btn-primary push-right" (click)="checkResponse()">Send</button>
+                                    </div>
+                                    <div class="col">
+                                        <button id="btn-primary2" class="btn btn-primary push-right" (click)="checkResponse()">Evaluation</button>
+                                    </div>
+                                </div>                                    
+                            </div>
+            <!-- <textarea class="form-control" id="textAreaExample" rows="20" style="resize: none;"></textarea>
+            <label class="form-label" for="textAreaExample">Message</label>
+            <button type="button" id="btn-primary1" class="btn btn-primary btn-lg">CHOOSE A TOPIC</button> -->
+        </div>
+      </div>
+</div>
+</section>
+</header>

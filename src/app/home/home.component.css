@@ -1,0 +1,148 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Header styles */
+  header {
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  .design-block {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background-image: url("images/67235.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #intro {
+    position: relative;
+  }
+  
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
+    position: absolute;
+    left: 15%;
+    bottom: 27%;
+    color: #fff;
+  }
+  
+  /* Top section styles */
+  .top-buffer {
+    margin-bottom: 20px;
+  }
+  
+  .top-buffer h1 {
+    font-size: 4rem;
+    color: #915fca;
+  }
+  
+  .top-buffer h2 {
+    font-size: 2.625rem;
+  }
+  
+  #btn-primary0 {
+    background-color: #915fca46;
+    border-color: #ffffff34;
+    border-radius: 18px ;
+    width: 300px;
+    
+}
+  #btn-primary0:hover {
+    background-color: #915fca;
+    border-color: #fff;
+}
+  #btn-primary1 {
+    background-color: #5f8aca46;
+    border-color: #ffffff34;
+    border-radius: 18px ;
+    width: 300px;
+    
+}
+  #btn-primary1:hover {
+    background-color: #5f84ca;
+    border-color: #fff;
+}
+  /* Middle section styles */
+  .top-buffer-inter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .top-buffer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  
+  .top-buffer2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .left,
+  .right {
+    width: 130px;
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .container {
+    position: static;
+    margin-top: -190%;
+    margin-bottom: 0%;
+    text-align: center;
+    }
+    
+    .left {
+    max-width: 100%;
+    }
+    
+    .right {
+    max-width: 100%;
+    }
+    
+    .top-buffer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .top-buffer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    }
+
