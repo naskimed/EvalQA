@@ -1,26 +1,8 @@
-* Color of the links BEFORE scroll */
-.navbar-scroll .nav-link,
-.navbar-scroll .navbar-toggler-icon,
-.navbar-scroll .navbar-brand {
-  color: #fff;
-}
 
-/* Color of the links AFTER scroll */
-.navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-toggler-icon,
-.navbar-scrolled .navbar-brand {
-  color: #fff;
-}
-
-/* Color of the navbar AFTER scroll */
-.navbar-scroll,
-.navbar-scrolled {
-  background-color: #cbbcb1;
-}
 
 .mask-custom {
   backdrop-filter: blur(5px);
-  background-color: #3d2a3c4d;
+  background-color: #3d2a3c00;
 }
 
 .navbar-brand {
@@ -29,16 +11,43 @@
 }
 
 #navbarSupportedContent {
-  margin-left: 13em;
+  font-size: 18px;
+  color:rgb(255, 255, 255);
+  margin-left: 40rem;
+
 }
 #navbarSupportedContent li {
-  margin: 1em;
+  margin: 1rem;
+  padding: 0px 10px;; 
+}
+
+.nav-link {
+  color:rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.navbar-nav a:hover, .navbar-nav a.active{
+  color:rgb(138, 61, 182);
+  text-decoration: underline;
 }
 
 
 header {
+  color:rgb(255, 255, 255);
   position: relative;
   top: 100px;
   z-index: -1;
 }
 
+.scrolled-navbar {
+  background-color: rgba(255, 255, 255, 0.678);
+  color: black;
+}
+
+.scrolled-navbar .nav-link {
+  color: black;
+}
+
+.logo {
+  transition: all 0.3s ease-in-out;
+}

@@ -5,7 +5,9 @@
     padding: 0;
   }
   
-  
+  .solution{
+    padding-top: 80px;
+  }
   /* Header styles */
   header {
     position: relative;
@@ -17,13 +19,14 @@
     position: relative;
     max-width: 100%;
     height: auto;
-    background-image: url("images/67235.jpg");
+    background-image: url("/assets/image/giphy2.gif");
     background-size: cover;
     background-repeat: no-repeat;
   }
   
   #intro {
     position: relative;
+    height: 80vh;
   }
   
   .mask {
@@ -59,7 +62,8 @@
     background-color: #915fca46;
     border-color: #ffffff34;
     border-radius: 18px ;
-    width: 300px;
+    
+    padding: 7px 35px;
     
 }
   #btn-primary0:hover {
@@ -70,7 +74,7 @@
     background-color: #5f8aca46;
     border-color: #ffffff34;
     border-radius: 18px ;
-    width: 300px;
+    padding: 7px 40px;
     
 }
   #btn-primary1:hover {
@@ -146,3 +150,70 @@
     }
     }
 
+    @media only screen and (max-width: 768px) {
+      .container{
+        bottom: 20%;
+        left: 0%;
+      }
+      .top-buffer h1{
+        font-size: 2rem;
+      }
+      .top-buffer h2{
+        font-size:1.68rem;
+      }
+
+      #btn-primary0{
+        padding: 5px
+         15px;
+      }
+      #btn-primary1{
+        padding: 5px 15px;
+      }
+    }
+    
+
+    .abouteval01
+    {
+      padding: 50px 50px;
+    }
+
+
+    .abouteval01 h1{
+      margin-top: -237px
+    }
+
+    .abouteval02 img{
+      margin-top: 100px;
+    }
+
+   hr {
+    border: 2px solid #000;
+    width: 85%;
+    border-radius: 40%;
+    margin: 0 auto;
+   }
+
+   .container3{
+    padding : 50px 50px;
+   }
+
+   .container4{
+    background-color: #cccccc;
+    padding : 50px 50px;
+    height: 30vh;
+   }
+
+   .container5{
+    background-color: #cccccc;
+    padding: 50px 50px;
+   }
+   .container6{
+    background-color: #dddddd;
+    padding: 50px 50px;
+   }
+   .seemore{
+    color: #000;
+   }
+   .seemore:hover{
+    color:#915fca;
+   }

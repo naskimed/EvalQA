@@ -1,40 +1,133 @@
-
 <body>
   <section class="design-block">
-    <div id="intro" class="bg-image vh-100">
-      <div class="mask"></div>
-    </div>
-    <div class="container text-center">
-      <div class="row top-buffer">
-        <div class="col" id="top">
-          <h1>CHECK OUT YOUR LEVEL OF UNDERSTANDING</h1>
-          <h2>with our QA generator and test your knowledge</h2>
-        </div>
+    <div class="solution">
+      <div id="intro" class="bg-image vh-100">
+        <div class="mask"></div>
       </div>
-      <div class="row top-buffer-inter">
-        <div class="col">
-          <img class="left" src="assets/image/010.png" alt="left image">
+      <div class="container text-center">
+        <div class="row top-buffer">
+          <div class="col" id="top">
+            <h1>CHECK OUT YOUR LEVEL OF UNDERSTANDING</h1>
+            <h2>with EvalQA and test your knowledge</h2>
+          </div>
         </div>
-        <div class="col">
-          <img class="right" src="assets/image/020.png" alt="right image">
+        <div class="row top-buffer-inter">
+          <div class="col">
+            <img class="left" src="assets/image/010.png" alt="left image">
+          </div>
+          <div class="col">
+            <img class="right" src="assets/image/020.png" alt="right image">
+          </div>
         </div>
-      </div>
-      <div class="row top-buffer1">
-        <div class="col p-2">
-          <p>if you have a paragraph and you want to test your knowledge in that specific text you can just put it in our platforme and we will take care of the rest from there.</p>
+        <div class="row top-buffer1">
+          <div class="col p-2">
+            <p>if you have a paragraph and you want to test your knowledge in that specific text you can just put it in
+              our platforme and we will take care of the rest from there.</p>
+          </div>
+          <div class="col p-2">
+            <p>If you want to just chose a topic and test your knowledge in that specific topic you can click here and
+              chose from the diffrenet topics that we provide.</p>
+          </div>
         </div>
-        <div class="col p-2">
-          <p>If you want to just chose a topic and test your knowledge in that specific topic you can click here and  chose from the diffrenet topics that we provide.</p>
-        </div>
-      </div>
-      <div class="row top-buffer2">
-        <div class="col">
-          <button type="button" id="btn-primary0" class="btn btn-primary btn-lg" (click)="goToFirstChat()">ENTER YOUR TEXT</button>
-        </div>
-        <div class="col">
-          <button type="button" id="btn-primary1" class="btn btn-primary btn-lg" (click)="goToSecondChat()">CHOOSE A TOPIC</button>
+        <div class="row top-buffer2">
+          <div class="col">
+            <button type="button" id="btn-primary0" class="btn btn-primary btn-lg" (click)="goToFirstChat()">ENTER YOUR
+              TEXT</button>
+          </div>
+          <div class="col">
+            <button type="button" id="btn-primary1" class="btn btn-primary btn-lg" (click)="goToSecondChat()">CHOOSE A
+              TOPIC</button>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+
+  <div class="aboutEval">
+    <!-- CONT2 -->
+    <div id="intro">
+      <div class="mask" style="background-image: url('/assets/image/bgwhite01.png'); ">
+
+        <div class="container2">
+          <div class="row">
+            <div class="col abouteval01">
+              <h1 style="padding-top: 300px;"><b>EvalQA 1.0</b></h1>
+              <br>
+              <!-- <h2 style="padding-left: 8px ; font-size: 37px; color: #9180f3; font-family: 'Montserrat', sans-serif;"><b>Introduction:</b></h2> -->
+              <br>
+              <h2>Introduction</h2>
+              <p class="lot" style="font-size: 18px; padding-top: 15px; line-height: 35px; ">We utilized advanced
+                natural language processing techniques, specifically transformers, to develop a cutting-edge model
+                capable of analyzing any given text and generating insightful questions and corresponding answers. This
+                was achieved through leveraging the power of the pre-trained T5 model, which was developed by Google and
+                is widely regarded as one of the most effective models in the field of natural language processing.</p>
+              <br>
+              <a href="https://huggingface.co/docs/transformers/model_doc/t5" class="seemore">> See more about T5</a>
+            </div>
+            <div class="col abouteval02">
+              <img src="/assets/image/textimg01.png" style="width: 80%; margin-left: 50px;">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container3">
+          <h2>DataSet</h2>
+          <p class="lot" style="font-size: 18px; padding-top: 15px; padding-right: 15px; line-height: 35px; ">We
+            fine-tuned the T5 model using two datasets: the Stanford Question Answering Dataset (SQuAD) and a custom
+            dataset created from exams at the Sup'Com. The goal of this fine-tuning was to develop a question/answer
+            model that could generate questions and answers from a given text, with a focus on fields related to our own
+            field of expertise.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container4">
+      <div class="row">
+        <div class="col squadtext">
+          <p style="font-size: 18px; padding-top: 50px; line-height: 35px; ">The SQuAD dataset is a popular benchmark
+            for question answering models and contains a large number of questions and answers on various topics. By
+            fine-tuning the T5 model on this dataset, we aimed to improve the model's ability to understand natural
+            language and generate accurate answers.</p>
+          <br>
+          <a href="https://rajpurkar.github.io/SQuAD-explorer/" class="seemore">> See more about SQuAD</a>
+        </div>
+        <div class="col squadimg">
+          <img src="/assets/image/2070.png" style="margin: -60px 100px">
+        </div>
+      </div>
+    </div>
+
+    <div class="container5">
+      <div class="row">
+        <div class="col squadtext">
+          <p style="font-size: 18px; padding-top: 50px; line-height: 35px; ">In addition to the SQuAD dataset, we also
+            created a custom dataset using exams from the Sup'Com, which is a higher education institution specializing
+            in information and communication technology. This dataset allowed us to focus on fields related to our own
+            area of expertise, which could improve the model's ability to generate relevant and accurate answers in our
+            specific domain.</p>
+          <br>
+        </div>
+        <div class="col squadimg">
+          <img src="/assets/image/doc1.png" style="margin: -0px 150px; width: 70%;">
+        </div>
+      </div>
+    </div>
+
+    <div class="container6">
+      <div class="row">
+        <h2>Fine-tuning T5: Adaptive fine-tuning</h2>
+        <p style="font-size: 18px; padding-top: 50px; line-height: 35px; ">Even though pre-trained language models are
+          more robust in terms of out-of-distribution generalisation than previous models (Hendrycks et al., 2020), they
+          are still poorly equipped to deal with data that is substantially different from the one they have been
+          pre-trained on. Adaptive fine-tuning is a way to bridge such a shift in distribution by fine-tuning the model
+          on data that is closer to the distribution of the target data. Specifically, adaptive fine-tuning involves
+          fine-tuning the model on additional data prior to task-specific fine-tuning, which can be seen below.
+          Importantly, the model is fine-tuned with the pre-training objective, so adaptive fine-tuning only requires
+          unlabelled data.</p>
+        <br>
+        <img src="/assets/image/adaptive_fine-tuning-1.png" style="width: 50%; margin-left: 450px; margin-top: 50px">
+      </div>
+    </div>
+    <!-- CONT2 -->
+  </div>
 </body>
