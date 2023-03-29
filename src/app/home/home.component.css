@@ -39,9 +39,10 @@
   
   .container {
     position: absolute;
-    left: 15%;
-    bottom: 27%;
-    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
   }
   
   /* Top section styles */
@@ -119,12 +120,11 @@
     }
   }
 
-  @media screen and (max-width: 390px) {
+
+    @media only screen and (max-width: 768px) {
     .container {
     position: static;
-    margin-top: -190%;
-    margin-bottom: 0%;
-    text-align: center;
+    margin: -30% 50%;
     }
     
     .left {
@@ -148,13 +148,7 @@
     justify-content: center;
     align-items: center;
     }
-    }
 
-    @media only screen and (max-width: 768px) {
-      .container{
-        bottom: 20%;
-        left: 0%;
-      }
       .top-buffer h1{
         font-size: 2rem;
       }
@@ -172,19 +166,6 @@
     }
     
 
-    .abouteval01
-    {
-      padding: 50px 50px;
-    }
-
-
-    .abouteval01 h1{
-      margin-top: -237px
-    }
-
-    .abouteval02 img{
-      margin-top: 100px;
-    }
 
    hr {
     border: 2px solid #000;
@@ -194,22 +175,35 @@
    }
 
    .container3{
-    padding : 50px 50px;
+    background-color: #cccccc;
+    padding: 50px 50px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
    }
 
    .container4{
+   
     background-color: #cccccc;
     padding : 50px 50px;
-    height: 30vh;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
    }
 
    .container5{
     background-color: #cccccc;
     padding: 50px 50px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
    }
    .container6{
     background-color: #dddddd;
     padding: 50px 50px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
    }
    .seemore{
     color: #000;
@@ -217,3 +211,57 @@
    .seemore:hover{
     color:#915fca;
    }
+/*****************************/
+
+.abouteval01 {
+  padding: 9px 46px;
+  margin: -42px 10px;
+}
+
+.abouteval02 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+.squadimg img{
+  max-width: 100%;
+  display: block;
+  margin: -120px -10px;
+  
+}
+
+.supcomimg img{
+    max-width: 70%;
+  display: block;
+  margin: -80px 100px; 
+}
+
+@media (max-width: 767px) {
+  .col {
+    flex-basis: 100%;
+  }
+
+  .container3{
+    padding: 174px 50px;
+  }
+
+  .abouteval01{
+    padding: 7px 50px;
+    margin: -146px 0px
+  }
+
+  .abouteval02 img {
+    padding: 12px;
+    margin: 121px -2px
+  }
+  .squadimg img{
+    padding: 20px;
+    margin: -446px 1px
+  }
+  .supcomimg img{
+    display: none;
+  }
+}

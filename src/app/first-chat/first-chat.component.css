@@ -1,33 +1,36 @@
-section{
-    background-image: url("/assets/image/67235.jpg");
-    max-width: 100%;
-    height: auto;
-    /*background-size: contain;*/
-    background-size: 100% 120%;
-    background-repeat: no-repeat;
-    position: relative;
-  }
+body {
+  background-image: url("/assets/image/giphy2.gif");
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
 
 .form-control{
-  background-color: #ffffff1a;
-  border-color: #ffffff56;
+  background-color: #0000006b;
+  border-color: #4f225c75;
   color: #fff;
 }
 
 .container{
-    left: 15%;
-    bottom: 20%;
-    position: absolute;
-    color: #fff;
+    margin: 0 auto; /* Center the container horizontally */
+    top: 50%;
+    left: 50%;
+   padding-top: 120px;
+   padding-bottom: 100px;
 }
 
 #btn-primary1 {
-  background-color: #915fca46;
-  border-color: #ffffff34;
+  border: solid 1.5px;
+  background-color: #56155a6b;
+  border-color: #4f225c75;
   border-radius: 12px ;
   margin-top: 10px;
-  width: 200px;
-  
+  width: 170px;
+  float: left;
 }
 #btn-primary1:hover {
   background-color: #915fca;
@@ -63,8 +66,9 @@ section{
 
 .frame-box{
     /*border: dotted 2px orange; padding: 20px;*/
-    border: solid 1.5px;
-    border-color: #ffffff3b;
+    border: solid 3.5px;
+    background-color: #00000030;
+    border-color: #4f225c75;
     border-radius: 12px;
     min-height: 400px;
     max-height: 400px;
@@ -90,12 +94,13 @@ section{
 }
 
 #btn-primary0 {
-  background-color: #915fca46;
-  border-color: #ffffff34;
+  border: solid 1.5px;
+  background-color: #56155a6b;
+  border-color: #4f225c75;
   border-radius: 12px ;
   margin-top: 10px;
-  width: 200px;
-  margin-left: 38px
+  width: 170px;
+  margin-left: 20px;
   
 }
 #btn-primary0:hover {
@@ -104,13 +109,12 @@ section{
 }
 
 #btn-primary2 {
-  background-color: #8d9ba8b2;
-  border-color: #ffffff34;
+  background-color: #10233989;
+  border-color: #27225c65;
   border-radius: 12px ;
   margin-top: 10px;
-  width: 200px;
-  margin-left: 38px
-  
+  width: 170px;
+  margin-left: 20px;
 }
 
 #btn-primary2:hover {

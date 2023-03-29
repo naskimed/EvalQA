@@ -1,71 +1,72 @@
-<header>
+<!--Section: Design Block-->
+
+<body>
+    <!-- Intro -->
+    <!-- Intro -->
     <!--Section: Design Block-->
-<section>
-    <!-- Intro -->
-    <div id="intro" class="bg-image vh-100" >
-      <div class="mask" style="background-color: rgba(214, 214, 214, 0.15);"></div>
-    </div>
-    <!-- Intro -->
-  <!--Section: Design Block-->
-<div class="container">
-    <div class="row top-buffer">
-        <div class="col choice">
-            <div class="row">
-                <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off"> <!--we can add checked-->
-                    <label class="btn btn-outline-danger" for="vbtn-radio1">Telecom</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio2">Web Dev</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio3">Signal</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio4">Economie Digital</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio5" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio5">Cybersecurity</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio6" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio6">IOT</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio7" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio7">Introduction to ML</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio8" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio8">Statistic Inferance</label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio9" autocomplete="off">
-                    <label class="btn btn-outline-danger" for="vbtn-radio9">Problem solving</label>
-                  </div>
+    <div class="container text-center">
+        <div class="row top-buffer">
+            <div class="col choice">
+                <div class="row">
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off">
+                        <!--we can add checked-->
+                        <label class="btn btn-outline-danger" for="vbtn-radio1">Telecom</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio2">Web Dev</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio3">Signal</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio4">Economie Digital</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio5" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio5">Cybersecurity</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio6" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio6">IOT</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio7" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio7">Introduction to ML</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio8" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio8">Statistic Inferance</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio9" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="vbtn-radio9">Problem solving</label>
+                    </div>
                 </div>
-            <div class="row start-button">
-                <button type="button" id="btn-primary1" class="btn btn-primary btn-lg">START</button>
+                <div class="row start-button">
+                    <button type="button" id="btn-primary1" class="btn btn-primary btn-lg">START</button>
+                </div>
             </div>
-        </div>
-        <div class="col-md-9">
-                        <div class="col-md-15"></div>
-                        <div class="col-md-15">
-                            <div class="frame-box">
-                                <div *ngFor="let item of chatConversation">
-                                    <p class="message" [ngClass]="item.cssClass">
-                                        {{item.person}} :  {{getText(item.response)}}                                                                                                            
-                                    </p>
-                                    
-                                </div>
-                                <div><img src="../../assets/image/loading.gif" *ngIf="showSpinner" width="300px" style="margin-left: 320px; margin-bottom: 200px;" ></div>
-                                
-                            </div>
-                            <br>
-                                <textarea row="3" cols="10" class="form-control" placeholder="Enter your answer" [(ngModel)]="promptText" style="resize: none;" ></textarea>
-                                <br>
-                                <div class="row">
-                                    <div class="col">
-                                        <button id="btn-primary0" class="btn btn-primary push-right" (click)="checkResponse()">Send</button>
-                                    </div>
-                                    <div class="col">
-                                        <button id="btn-primary2" class="btn btn-primary push-right" (click)="checkResponse()">Evaluation</button>
-                                    </div>
-                                </div>                                    
-                            </div>
-            <!-- <textarea class="form-control" id="textAreaExample" rows="20" style="resize: none;"></textarea>
+            <div class="col-md-9">
+                <div class="col-md-15"></div>
+                <div class="col-md-15">
+                    <div class="frame-box">
+                        <div *ngFor="let item of chatConversation">
+                            <p class="message" [ngClass]="item.cssClass">
+                                {{item.person}} : {{getText(item.response)}}
+                            </p>
+
+                        </div>
+                        <div><img src="../../assets/image/loading.gif" *ngIf="showSpinner" width="300px"
+                                style="margin-left: 320px; margin-bottom: 200px;"></div>
+
+                    </div>
+                    <br>
+                    <textarea row="3" cols="10" class="form-control" placeholder="Enter your answer"
+                        [(ngModel)]="promptText" style="resize: none;"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <button id="btn-primary0" class="btn btn-primary push-right"
+                                (click)="checkResponse()">Send</button>
+                        </div>
+                        <div class="col">
+                            <button id="btn-primary2" class="btn btn-primary push-right"
+                                (click)="checkResponse()">Evaluation</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <textarea class="form-control" id="textAreaExample" rows="20" style="resize: none;"></textarea>
             <label class="form-label" for="textAreaExample">Message</label>
             <button type="button" id="btn-primary1" class="btn btn-primary btn-lg">CHOOSE A TOPIC</button> -->
+            </div>
         </div>
-      </div>
-</div>
-</section>
-</header>
+    </div>
+</body>

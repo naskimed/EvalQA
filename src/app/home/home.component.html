@@ -52,12 +52,12 @@
         <div class="container2">
           <div class="row">
             <div class="col abouteval01">
-              <h1 style="padding-top: 300px;"><b>EvalQA 1.0</b></h1>
+              <h1 style="padding-top: 165px;"><b>EvalQA 1.0</b></h1>
               <br>
               <!-- <h2 style="padding-left: 8px ; font-size: 37px; color: #9180f3; font-family: 'Montserrat', sans-serif;"><b>Introduction:</b></h2> -->
               <br>
               <h2>Introduction</h2>
-              <p class="lot" style="font-size: 18px; padding-top: 15px; line-height: 35px; ">We utilized advanced
+              <p class="lot">We utilized advanced
                 natural language processing techniques, specifically transformers, to develop a cutting-edge model
                 capable of analyzing any given text and generating insightful questions and corresponding answers. This
                 was achieved through leveraging the power of the pre-trained T5 model, which was developed by Google and
@@ -66,25 +66,29 @@
               <a href="https://huggingface.co/docs/transformers/model_doc/t5" class="seemore">> See more about T5</a>
             </div>
             <div class="col abouteval02">
-              <img src="/assets/image/textimg01.png" style="width: 80%; margin-left: 50px;">
+              <img src="/assets/image/textimg01.png">
             </div>
           </div>
         </div>
-        <hr>
-        <div class="container3">
-          <h2>DataSet</h2>
-          <p class="lot" style="font-size: 18px; padding-top: 15px; padding-right: 15px; line-height: 35px; ">We
-            fine-tuned the T5 model using two datasets: the Stanford Question Answering Dataset (SQuAD) and a custom
-            dataset created from exams at the Sup'Com. The goal of this fine-tuning was to develop a question/answer
-            model that could generate questions and answers from a given text, with a focus on fields related to our own
-            field of expertise.</p>
-        </div>
+
+
+
+
       </div>
     </div>
+    <div class="container3">
+      <h2>DataSet</h2>
+      <p class="lot">We
+        fine-tuned the T5 model using two datasets: the Stanford Question Answering Dataset (SQuAD) and a custom
+        dataset created from exams at the Sup'Com. The goal of this fine-tuning was to develop a question/answer
+        model that could generate questions and answers from a given text, with a focus on fields related to our own
+        field of expertise.</p>
+    </div>
+
     <div class="container4">
       <div class="row">
-        <div class="col squadtext">
-          <p style="font-size: 18px; padding-top: 50px; line-height: 35px; ">The SQuAD dataset is a popular benchmark
+        <div class="col squadtxt">
+          <p>The SQuAD dataset is a popular benchmark
             for question answering models and contains a large number of questions and answers on various topics. By
             fine-tuning the T5 model on this dataset, we aimed to improve the model's ability to understand natural
             language and generate accurate answers.</p>
@@ -92,23 +96,23 @@
           <a href="https://rajpurkar.github.io/SQuAD-explorer/" class="seemore">> See more about SQuAD</a>
         </div>
         <div class="col squadimg">
-          <img src="/assets/image/2070.png" style="margin: -60px 100px">
+          <img src="/assets/image/2070.png">
         </div>
       </div>
     </div>
 
     <div class="container5">
       <div class="row">
-        <div class="col squadtext">
-          <p style="font-size: 18px; padding-top: 50px; line-height: 35px; ">In addition to the SQuAD dataset, we also
+        <div class="col supcomtxt">
+          <p>In addition to the SQuAD dataset, we also
             created a custom dataset using exams from the Sup'Com, which is a higher education institution specializing
             in information and communication technology. This dataset allowed us to focus on fields related to our own
             area of expertise, which could improve the model's ability to generate relevant and accurate answers in our
             specific domain.</p>
           <br>
         </div>
-        <div class="col squadimg">
-          <img src="/assets/image/doc1.png" style="margin: -0px 150px; width: 70%;">
+        <div class="col supcomimg">
+          <img src="/assets/image/doc1.png">
         </div>
       </div>
     </div>
@@ -125,7 +129,7 @@
           Importantly, the model is fine-tuned with the pre-training objective, so adaptive fine-tuning only requires
           unlabelled data.</p>
         <br>
-        <img src="/assets/image/adaptive_fine-tuning-1.png" style="width: 50%; margin-left: 450px; margin-top: 50px">
+        <img src="/assets/image/adaptive_fine-tuning-1.png" style="width: 80%;margin: 0 auto ;margin-top: 30px">
       </div>
     </div>
     <!-- CONT2 -->

@@ -1,60 +1,117 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* About Us Section */
+
+.about-us {
+  background-image: url('/assets/image/giphy2.gif');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont{
+  margin: 0 auto;
+  position: relative;
+  padding: 50px;
+  padding-top: 100px;
+  display: inline-block;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-us .img-fluid {
+  width: 100%;
+}
+
+/* Our Team Section */
+
+.our-team {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.our-team h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.our-team img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
   
-  .title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .card {
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .card h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .card p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .card ul li {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-  
-  .team-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .team-member img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .team-member p {
-    margin: 0;
-  }
-  
+}
+
+.our-team h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.our-team p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Our Mission Section */
+
+.our-mission {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.our-mission h3 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.our-mission p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Our Vision Section */
+
+.our-vision {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.our-vision h3 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.our-vision p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
