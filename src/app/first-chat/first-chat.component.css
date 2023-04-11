@@ -1,7 +1,7 @@
 body {
   background-image: url("/assets/image/giphy2.gif");
   max-width: 100%;
-  height: auto;
+  min-height: 94vh;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
